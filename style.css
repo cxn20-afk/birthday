@@ -76,3 +76,53 @@ button:active { transform: scale(0.95); }
 @media (max-width: 480px) {
   button { padding: 20px; font-size: 22px; }
 }
+
+.cake{
+  position:relative;
+  width:200px;
+  margin:40px auto;
+}
+
+.bottom{
+  height:60px;
+  background:#ff8fab;
+  border-radius:10px;
+}
+
+.middle{
+  height:50px;
+  background:#ffb3c6;
+  margin:5px 0;
+  border-radius:10px;
+}
+
+.top{
+  height:40px;
+  background:#ffc2d1;
+  border-radius:10px;
+}
+
+.candle{
+  width:10px;
+  height:40px;
+  background:white;
+  position:absolute;
+  left:95px;
+  top:-40px;
+}
+
+.flame{
+  width:15px;
+  height:15px;
+  background:orange;
+  border-radius:50%;
+  position:absolute;
+  top:-15px;
+  left:-2px;
+  animation:flicker 0.3s infinite alternate;
+}
+
+@keyframes flicker{
+  from{ transform:scale(1); opacity:1;}
+  to{ transform:scale(1.2); opacity:0.7;}
+}
